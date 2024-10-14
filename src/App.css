@@ -1,0 +1,170 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Global styling for the app */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Filter section */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #555;
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+select:hover {
+  background-color: #f0f0f0;
+  border-color: #888;
+}
+
+select:focus {
+  border-color: #007bff;
+}
+
+/* Grid layout for clothing items */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-content .tag {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #f5f7fa;
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* Button styles */
+button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+button:focus {
+  outline: none;
+  background-color: #004085;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+  }
+}
+
+/* Set the background image for the entire body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://www.dropbox.com/scl/fi/a6t1wqfhxmb1nyta3f4tx/wts-in-my-wardrobe.png?rlkey=73vriinv6ll2mbelgj8re0tit&st=20gk2pz1&raw=1') no-repeat center center fixed;
+  background-size: cover; /* Cover the entire page */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure it takes full height */
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to the content */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
