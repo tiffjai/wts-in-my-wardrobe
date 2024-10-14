@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.custom-image-class {
+  width: 150px;  /* Adjust width */
+  height: auto;  /* Keep aspect ratio */
+  object-fit: cover;
+}
